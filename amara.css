@@ -1,0 +1,95 @@
+body{
+background-color: rgb(169, 169, 169);
+font-family: cursive;
+}
+
+header{
+    width: 88%;
+    background-color: white;
+    padding: 1rem;
+    font-style: italic;
+    
+}
+
+main{
+    padding: 2rem;
+
+}
+
+.Shop{
+    display: grid;
+    gap: 5rem;
+    
+}
+.row{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgb(red, green, blue);
+}
+.row-image-box img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+.row-content-box {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.prices p {
+    font-weight: bold;
+    font-style: italic;
+}
+.prices button {
+    font-weight: 600;
+    background-color: blue;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+footer {
+    background-color: rgb(red, green, blue);
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 2rem;
+}
+
+
+/* =========================================================== */
+
+
+/* Responsive styles for Tablet Screens */
+@media screen and (min-width: 768px) {
+    .Shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    footer section {
+        gap: 1rem;
+        display: flex;
+    }
+    
+}
+
+/* ================================================= */
+/* Responsive styles for Desktop screens */
+@media screen and (min-width: 1024px) {
+    .Shop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
