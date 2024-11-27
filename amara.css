@@ -33,7 +33,7 @@ main{
     object-fit: cover;
 }
 .row-content-box {
-    padding: 4rem;
+    padding: 2rem;
     display: grid;
     gap: 3rem;
 }
