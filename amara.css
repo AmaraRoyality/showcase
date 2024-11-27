@@ -33,9 +33,9 @@ main{
     object-fit: cover;
 }
 .row-content-box {
-    padding: 2rem;
+    padding: 4rem;
     display: grid;
-    gap: 1rem;
+    gap: 3rem;
 }
 .prices {
     display: flex;
